@@ -57,65 +57,65 @@ const mockMenuList: MenuList = [
       },
     ],
   },
-  {
-    code: 'component',
-    label: {
-      zh_CN: '组件',
-      en_US: 'Component',
-    },
-    icon: 'permission',
-    path: '/component',
-    children: [
-      {
-        code: 'componentForm',
-        label: {
-          zh_CN: '表单',
-          en_US: 'Form',
-        },
-        path: '/component/form',
-      },
-      {
-        code: 'componentTable',
-        label: {
-          zh_CN: '表格',
-          en_US: 'Table',
-        },
-        path: '/component/table',
-      },
-      {
-        code: 'componentSearch',
-        label: {
-          zh_CN: '查询',
-          en_US: 'Search',
-        },
-        path: '/component/search',
-      },
-      {
-        code: 'componentAside',
-        label: {
-          zh_CN: '侧边栏',
-          en_US: 'Aside',
-        },
-        path: '/component/aside',
-      },
-      {
-        code: 'componentTabs',
-        label: {
-          zh_CN: '选项卡',
-          en_US: 'Tabs',
-        },
-        path: '/component/tabs',
-      },
-      {
-        code: 'componentRadioCards',
-        label: {
-          zh_CN: '单选卡片',
-          en_US: 'Radio Cards',
-        },
-        path: '/component/radio-cards',
-      },
-    ],
-  },
+  // {
+  //   code: 'component',
+  //   label: {
+  //     zh_CN: '组件',
+  //     en_US: 'Component',
+  //   },
+  //   icon: 'permission',
+  //   path: '/component',
+  //   children: [
+  //     {
+  //       code: 'componentForm',
+  //       label: {
+  //         zh_CN: '表单',
+  //         en_US: 'Form',
+  //       },
+  //       path: '/component/form',
+  //     },
+  //     {
+  //       code: 'componentTable',
+  //       label: {
+  //         zh_CN: '表格',
+  //         en_US: 'Table',
+  //       },
+  //       path: '/component/table',
+  //     },
+  //     {
+  //       code: 'componentSearch',
+  //       label: {
+  //         zh_CN: '查询',
+  //         en_US: 'Search',
+  //       },
+  //       path: '/component/search',
+  //     },
+  //     {
+  //       code: 'componentAside',
+  //       label: {
+  //         zh_CN: '侧边栏',
+  //         en_US: 'Aside',
+  //       },
+  //       path: '/component/aside',
+  //     },
+  //     {
+  //       code: 'componentTabs',
+  //       label: {
+  //         zh_CN: '选项卡',
+  //         en_US: 'Tabs',
+  //       },
+  //       path: '/component/tabs',
+  //     },
+  //     {
+  //       code: 'componentRadioCards',
+  //       label: {
+  //         zh_CN: '单选卡片',
+  //         en_US: 'Radio Cards',
+  //       },
+  //       path: '/component/radio-cards',
+  //     },
+  //   ],
+  // },
 
   {
     code: 'business',
@@ -126,37 +126,37 @@ const mockMenuList: MenuList = [
     icon: 'permission',
     path: '/business',
     children: [
+      // {
+      //   code: 'basic',
+      //   label: {
+      //     zh_CN: '基本',
+      //     en_US: 'Basic',
+      //   },
+      //   path: '/business/basic',
+      // },
+      // {
+      //   code: 'withSearch',
+      //   label: {
+      //     zh_CN: '带查询',
+      //     en_US: 'WithSearch',
+      //   },
+      //   path: '/business/with-search',
+      // },
+      // {
+      //   code: 'withAside',
+      //   label: {
+      //     zh_CN: '带侧边栏',
+      //     en_US: 'WithAside',
+      //   },
+      //   path: '/business/with-aside',
+      // },
       {
-        code: 'basic',
+        code: 'theOfficeSearch',
         label: {
-          zh_CN: '基本',
-          en_US: 'Basic',
+          zh_CN: 'The Office Search',
+          en_US: 'The Office Search',
         },
-        path: '/business/basic',
-      },
-      {
-        code: 'withSearch',
-        label: {
-          zh_CN: '带查询',
-          en_US: 'WithSearch',
-        },
-        path: '/business/with-search',
-      },
-      {
-        code: 'withAside',
-        label: {
-          zh_CN: '带侧边栏',
-          en_US: 'WithAside',
-        },
-        path: '/business/with-aside',
-      },
-      {
-        code: 'theOffice',
-        label: {
-          zh_CN: 'The Office',
-          en_US: 'The Office',
-        },
-        path: '/business/the-office',
+        path: '/business/the-office-search',
       },
       {
         code: 'theOfficeTable',
@@ -166,22 +166,22 @@ const mockMenuList: MenuList = [
         },
         path: '/business/the-office-lines-table',
       },
-      {
-        code: 'withRadioCard',
-        label: {
-          zh_CN: '带单选卡片',
-          en_US: 'With Nav Tabs',
-        },
-        path: '/business/with-radio-cards',
-      },
-      {
-        code: 'withTabs',
-        label: {
-          zh_CN: '带选项卡',
-          en_US: 'With Tabs',
-        },
-        path: '/business/with-tabs',
-      },
+      // {
+      //   code: 'withRadioCard',
+      //   label: {
+      //     zh_CN: '带单选卡片',
+      //     en_US: 'With Nav Tabs',
+      //   },
+      //   path: '/business/with-radio-cards',
+      // },
+      // {
+      //   code: 'withTabs',
+      //   label: {
+      //     zh_CN: '带选项卡',
+      //     en_US: 'With Tabs',
+      //   },
+      //   path: '/business/with-tabs',
+      // },
     ],
   },
 ];

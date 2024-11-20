@@ -24,8 +24,12 @@ const RadioCardsPage = lazy(() => import(/* webpackChunkName: "radio-cards'"*/ '
 const BusinessBasicPage = lazy(() => import(/* webpackChunkName: "basic-page" */ '@/pages/business/basic'));
 const BusinessWithSearchPage = lazy(() => import(/* webpackChunkName: "with-search" */ '@/pages/business/with-search'));
 const BusinessWithAsidePage = lazy(() => import(/* webpackChunkName: "with-aside" */ '@/pages/business/with-aside'));
-const Business_TheOffice_Page = lazy(() => import(/* webpackChunkName: "with-aside" */ '@/pages/business/the-office'));
-const Business_TheOfficeTable_Page = lazy(() => import(/* webpackChunkName: "with-aside" */ '@/pages/business/the-office-lines-table'));
+const Business_TheOfficeSearch_Page = lazy(
+  () => import(/* webpackChunkName: "with-aside" */ '@/pages/business/the-office-search'),
+);
+const Business_TheOfficeTable_Page = lazy(
+  () => import(/* webpackChunkName: "with-aside" */ '@/pages/business/the-office-lines-table'),
+);
 
 const BusinessWithRadioCardsPage = lazy(
   () => import(/* webpackChunkName: "with-aside" */ '@/pages/business/with-radio-cards'),
@@ -98,8 +102,8 @@ const routeList: RouteObject[] = [
         element: <WrapperRouteComponent element={<BusinessWithAsidePage />} titleId="title.account" />,
       },
       {
-        path: 'business/the-office',
-        element: <WrapperRouteComponent element={<Business_TheOffice_Page />} titleId="title.account" />,
+        path: 'business/the-office-search',
+        element: <WrapperRouteComponent element={<Business_TheOfficeSearch_Page />} titleId="title.account" />,
       },
       {
         path: 'business/the-office-lines-table',

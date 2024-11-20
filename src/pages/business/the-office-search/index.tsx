@@ -63,11 +63,13 @@ const columns = [
     title: 'director',
     dataIndex: 'director',
     key: 'director',
+    hidden: true,
   },
   {
     title: 'writer',
     dataIndex: 'writer',
     key: 'writer',
+    hidden: true,
   },
   {
     title: 'character',
@@ -89,7 +91,7 @@ const columns = [
     dataIndex: 'method',
     key: 'method',
   },
-];
+].filter(item => !item.hidden);;
 
 const App: React.FC = () => {
   const [form] = Form.useForm();
@@ -179,7 +181,7 @@ const App: React.FC = () => {
                 ...item,
                 key: index, // Add a unique key for each row
               }))}
-              pagination={{ pageSize: 10 }} // Optional pagination
+              pagination={ {pageSizeOptions: [10, 50, 100]}} // Optional pagination
             />
           </Col>
         </Row>
