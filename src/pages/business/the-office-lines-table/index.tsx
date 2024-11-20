@@ -84,18 +84,7 @@ const columns = [
   },
 ];
 
-// Define the type for your JSON data
-type DataSourceItem = {
-  season: number;
-  episode: number;
-  title: string;
-  scene: number;
-  speaker: string;
-  line: string;
-  key: number;
-};
-
-const data = table_data as DataSourceItem[];
+const data = table_data as any;
 const season_episode = season_episode_data as any;
 
 const App: React.FC = () => {
@@ -106,7 +95,7 @@ const App: React.FC = () => {
       const parts = newValue.split('-');
       const season = Number(parts[0]);
       const episode = Number(parts[1]);
-      const new_tableData = data.filter(item => item.season == season && item.episode == episode);
+      const new_tableData = data.filter((item: { season: number; episode: number; }) => item.season == season && item.episode == episode);
       setTableData(new_tableData);
     }
   };
