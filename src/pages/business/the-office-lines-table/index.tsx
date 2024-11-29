@@ -112,7 +112,7 @@ const App: React.FC = () => {
             <Table
               columns={columns}
               dataSource={tableData}
-              pagination={{ pageSizeOptions: [10, 50, 100, 1000] }} // Optional pagination
+              pagination={{ pageSize:1000, pageSizeOptions: [10, 50, 100, 1000] }} // Optional pagination
             />
           </Col>
         </Row>

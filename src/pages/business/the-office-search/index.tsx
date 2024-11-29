@@ -91,7 +91,7 @@ const columns = [
     dataIndex: 'method',
     key: 'method',
   },
-].filter(item => !item.hidden);;
+].filter(item => !item.hidden);
 
 const App: React.FC = () => {
   const [form] = Form.useForm();
@@ -109,12 +109,12 @@ const App: React.FC = () => {
 
   const handleSearch = async (query: any, limit: any) => {
     try {
-      const response = await axios.get(
-        `https://caojilin-python-api.vercel.app/api/py/rapidfuzz?query=${query}&limit=${limit.toString()}`,
-      );
       // const response = await axios.get(
-      //     `http://127.0.0.1:8000/api/py/rapidfuzz?query=${query}&limit=${limit.toString()}`,
+      //   `https://caojilin-python-api.vercel.app/api/py/rapidfuzz?query=${query}&limit=${limit.toString()}`,
       // );
+      const response = await axios.get(
+        `http://127.0.0.1:8000/api/py/rapidfuzz?query=${query}&limit=${limit.toString()}`,
+      );
 
       // Transform the response object into an array of rows
       const data = Object.values(response.data);
@@ -176,12 +176,11 @@ const App: React.FC = () => {
           <Col span={24}>
             <Table
               columns={columns}
-              style={{ marginTop: '-20px' }}
               dataSource={responseData.map((item, index) => ({
                 ...item,
                 key: index, // Add a unique key for each row
               }))}
-              pagination={ {pageSizeOptions: [10, 50, 100]}} // Optional pagination
+              pagination={{pageSize: 50, pageSizeOptions: [50, 100] }} // Optional pagination
             />
           </Col>
         </Row>
